@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landwind Project!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Here is the navbar start-->
+    <nav class="sticky top-0 z-50">
+        <div class="flex flex-wrap justify-between items-center p-5 px-10 bg-gray-50 font-medium">
+            <div class="w-full sm:w-auto flex justify-between items-center">
+                <h1 class="font-bold text-xl text-gray-800">Landwind</h1>
+                <button id="menu-toggle" class="sm:hidden text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+            <ul id="menu" class="hidden space-y-4 md:space-y-0 sm:flex sm:gap-10 flex-col sm:flex-row w-full sm:w-auto mt-4 sm:mt-0">
+                <li><a class="text-blue-600" href="#">Home</a></li>
+                <li><a class="hover:text-blue-600 hover:underline" href="#">Company</a></li>
+                <li><a class="hover:text-blue-600 hover:underline" href="#">Marketplace</a></li>
+                <li><a class="hover:text-blue-600 hover:underline" href="#">Team</a></li>
+                <li><a class="hover:text-blue-600 hover:underline" href="#">Contact</a></li>
+                <div class="sm:hidden pt-3">
+                    <button class="bg-violet-600 px-5 py-2 rounded-md text-white hover:bg-violet-900 w-full text-center">Download</button>
+                </div>
+            </ul>
+            <div class="hidden sm:block">
+                <button class="bg-violet-600 px-5 py-2 rounded-md text-white hover:bg-violet-900">Download</button>
+            </div>
+        </div>
+        
+    </nav><hr>
+    <main>
+        <div class="grid md:grid-cols-2 px-8">
+            <div class="md:mt-12 mt-6 gap-6">
+                <h1 class="font-extrabold lg:text-6xl md:text-5xl text-2xl italic">Building digital products & brands.</h1>
+                <p class="pt-6 text-lg text-gray-400 font-medium">This free and open-source landing page template was built using the utility classes from Tailwind CSS and based on the components from the Flowbite Library and the Blocks System.</p>
+                <div class="mt-10 md:space-x-4 ">
+                    <button class="border-2 border-gray-500 px-5 py-2 mb-3 rounded-md font-medium w-full text-center md:max-w-fit hover:bg-gray-700 hover:text-white"><i class="fa-brands fa-github pr-2"></i>View on GitHub</button>
+                    <button class="border-2 border-gray-500 px-5 py-2 rounded-md font-medium w-full text-center md:max-w-fit hover:bg-gray-700 hover:text-white"><i class="fa-brands fa-figma text-red-500 pr-2 hover:bg-gray-400"></i>Get Figma file</button>
+                </div>
+            </div>
+            <div>
+                <img class="hover:scale-105 md:mt-0 sm:mt-16" src="https://demo.themesberg.com/landwind/images/hero.png" alt="Computer icon image">
+            </div>
+        </div>
+    </main>
+    <!--Here is the same image-->
+    <section>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-10 justify-between items-center px-8">
+            <div>
+                <img class="grayscale hover:grayscale-0" src="https://freepngdesign.com/content/uploads/images/t_p-1698-4-airbnb-logo-png-transparent-logo-992527404469.png" alt="Ariband icon">
+            </div>
+            <div>
+                <img class="grayscale hover:grayscale-0" src="https://png.pngtree.com/png-clipart/20230916/original/pngtree-google-logo-vector-png-image_12256709.png" alt="Google">
+            </div>
+            <div>
+                <img class="grayscale hover:grayscale-0" src="https://static.vecteezy.com/system/resources/thumbnails/027/127/493/small_2x/microsoft-logo-microsoft-icon-transparent-free-png.png" alt="Micosoft icon">
+            </div>
+            <div>
+                <img class="grayscale hover:grayscale-0" src="https://logos-world.net/wp-content/uploads/2020/09/Spotify-Logo-2013-2015.png" alt="Spotify icon">
+            </div>
+            <div>
+                <img class="grayscale hover:grayscale-0" src="https://brockleymax.co.uk/fin/wp-content/uploads/2024/02/mailchimp-logo-black-png-transparent.png" alt="Mailchimp icon">
+            </div>
+            <div>
+                <img class="grayscale hover:grayscale-0" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/mashable_logo_icon_169964.png" alt="Mashable icon">
+            </div>
+        </div>
+    </section>
+    <!--Here is the some work tools-->
+    <section class="bg-gray-50">
+        <div class="grid md:grid-cols-2 pt-10 md:pt-20 px-8">
+            <div>
+                <h1 class="font-extrabold text-3xl pb-6">Work with tools you already use</h1>
+                <p class="text-xl font-medium text-gray-500 pb-10">Deliver great service experiences fast - without the complexity of traditional ITSM solutions. Accelerate critical development work, eliminate toil, and deploy changes with ease.</p>
+                <hr><hr>
+                <div class="font-bold pt-10 text-gray-700 space-y-3">
+                <p><i class="fa-solid fa-check text-white bg-violet-700 p-1 px-2 rounded-full mr-4 text-xs"></i> Continuous integration and deployment</p>
+                <p><i class="fa-solid fa-check text-white bg-violet-700 p-1 px-2 rounded-full mr-4 text-xs"></i>  Development workflow</p>
+                <p><i class="fa-solid fa-check text-white bg-violet-700 p-1 px-2 rounded-full mr-4 text-xs"></i>  Knowledge management</p>
+                </div>
+                <h2 class="pt-8 text-xl text-gray-500">Deliver great service experiences fast - without the complexity of traditional ITSM solutions.</h2>
+            </div>
+            <div>
+                    <img class="sm:mt-24 md:mt-10 lg:mt-0" src="https://demo.themesberg.com/landwind/images/feature-1.png" alt="4 IMAGE">
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 pt-20 px-8 gap-8">
+            <div>
+                <img class="sm:mt-28 md:mt-20 lg:mt-0" src="https://demo.themesberg.com/landwind/images/feature-2.png" alt="4 IMAGE">
+           </div>
+            <div>
+                <h1 class="font-extrabold text-3xl pb-6">We invest in the world’s potential</h1>
+                <p class="text-xl font-medium text-gray-500 pb-10">Deliver great service experiences fast - without the complexity of traditional ITSM solutions. Accelerate critical development work, eliminate toil, and deploy changes with ease.</p>
+                <hr><hr>
+                <div class="font-bold pt-10 text-gray-700 space-y-3">
+                <p><i class="fa-solid fa-check text-white bg-violet-700 p-1 px-2 rounded-full mr-4 text-xs"></i> Dynamic reports and dashboards</p>
+                <p><i class="fa-solid fa-check text-white bg-violet-700 p-1 px-2 rounded-full mr-4 text-xs"></i>  Templates for everyone</p>
+                <p><i class="fa-solid fa-check text-white bg-violet-700 p-1 px-2 rounded-full mr-4 text-xs"></i>  Development workflow</p>
+                <p><i class="fa-solid fa-check text-white bg-violet-700 p-1 px-2 rounded-full mr-4 text-xs"></i>  Limitless business automation</p>
+                <p><i class="fa-solid fa-check text-white bg-violet-700 p-1 px-2 rounded-full mr-4 text-xs"></i>  Knowledge management</p>
+                </div>
+                <h2 class="pt-8 text-xl text-gray-500 pb-8">Deliver great service experiences fast - without the complexity of traditional ITSM solutions.</h2>
+            </div>
+        </div>   
+    </section>
+    <!--Here the product details section-->
+    <section>
+        <div class="grid md:grid-cols-2 px-8 md:gap-20 mt-10 md:mt-24">
+            <div>
+                <p class="text-xl font-bold text-violet-700 pb-4">Trusted Worldwide</p>
+                <h1 class="font-extrabold text-3xl italic pb-4">Trusted by over 600 million users and 10,000 teams</h1>
+                <p class="text-xl text-gray-500 font-medium pb-6">Our rigorous security and compliance standards are at the heart of all we do. We work tirelessly to protect you and your customers.</p> <hr>
+                <div class=" pt-6 pb-8">
+                    <p class="font-semibold items-center text-lg text-violet-700 pb-4">Explore Legality Guide<i class="fa-solid fa-arrow-right pl-5"></i></p>
+                    <p class="font-semibold items-center text-lg text-violet-700">Visit the Turst Center<i class="fa-solid fa-arrow-right pl-5"></i></p>
+                </div>
+            </div>
+            <div >
+                <div class="grid md:grid-cols-2 pb-10 space-y-4 md:space-y-0">
+                    <div>
+                        <i class="fa-solid fa-house font-bold text-5xl text-violet-700 pb-2 md:pb-5"></i>
+                       <h1 class="font-bold text-3xl pb-4">99.99% uptime</h1>
+                       <p class="text-gray-500">For Landwind, with zero maintenance downtime</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-user font-bold text-5xl text-violet-700 pb-5"></i>
+                        <h1 class="font-bold text-3xl pb-4">600M+ Users</h1>
+                        <p class="text-gray-500">Trusted by over 600 milion users around the world</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 space-y-4">
+                    <div>
+                        <i class="fa-solid fa-calendar-days font-bold text-5xl text-violet-700 pb-5"></i>
+                       <h1 class="font-bold text-3xl pb-4">100+ countries</h1>
+                       <p class="text-gray-500">Have used Landwind to create functional websites</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-cart-shopping font-bold text-5xl text-violet-700 pb-5"></i>
+                        <h1 class="font-bold text-3xl pb-4">5+ Million</h1>
+                        <p class="text-gray-500">Transactions per day</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Some deatils -->
+    <section class="bg-slate-50">
+        <div class="max-w-3xl mx-auto text-center mt-20">
+            <i class="fa-solid fa-quote-left text-6xl text-gray-500 pt-16"></i>
+            <p class="md:text-2xl text-lg px-8 font-medium mt-6 pb-16">
+                "Landwind is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."
+            </p>
+        </div>
+    </section>
+    <!--Free trail section-->
+    <section>
+        <div class="text-center mt-16">
+            <h1 class="font-bold text-4xl italic pb-4">Start your free trial today</h1>
+            <p class="text-xl text-gray-500 font-bold">Try Landwind Platform for 30 days. No credit card required.</p>
+            <button class="mt-5 bg-violet-700 px-5 py-2 rounded-md text-white font-semibold hover:bg-violet-900">Free trial for 30 days</button>
+        </div>
+    </section>
+    <!--footer section-->
+    <footer>
+        <div class="mt-16 bg-gray-200 font-bold text-2xl p-4 text-center italic">
+            <h1 >Developed by Joy 2024</h1>
+        </div>
+    </footer>
+    
+    <script src="javaScript.js"></script>
+</body>
+
+</html>
